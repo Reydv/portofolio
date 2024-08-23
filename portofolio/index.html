@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentScroll = 0;
+            let header = document.getElementById("skibidi");
+
+            window.addEventListener("scroll", function () {
+                let scroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scroll > currentScroll) {
+                    header.classList.add("-translate-y-full");
+                } else {
+                    header.classList.remove("-translate-y-full");
+                }
+                currentScroll = scroll;
+            });
+        });
+
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/poppins-v15-latin-regular.eot');
+            src: local(''),
+                url('../fonts/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+                url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+                url('../fonts/poppins-v15-latin-regular.woff') format('woff'),
+                url('../fonts/poppins-v15-latin-regular.ttf') format('truetype'),
+                url('../fonts/poppins-v15-latin-regular.svg#Poppins') format('svg');
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        footer {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="skibidi"
+        class="bg-white shadow-md fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out">
+        <div class="max-w-[1300px] mx-auto flex items-center justify-between p-[20px]">
+            <div class="text-[20px] font-bold">Reydv Portfolio</div>
+            <nav>
+                <ul class="flex space-x-[20px]">
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-500">About</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-blue-500">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="w-full h-[1400px] bg-[url('asset/space2.jpg')] pt-[80px]">
+        <div class=" w-full max-w-[1200px] h-full mx-auto px-4 sm:px-8">
+            <div
+                class="mt-[80px] sm:mt-[40epx] ml-[20%] sm:ml-0 sm:text-left sm:ml-[200px] font-medium text-[48px] sm:text-[155px] transform scale-x-110 text-white">
+                <h1 class="">Hi,</h1>
+                <h1 class="mt-[-24px] sm:mt-[-30px]">I'm Rey :)</h1>
+                <p class="text-[15px] sm:text-[30px] font-[300]">I'm an IT enthusiast with a particular interest in
+                    backend development, which seems ironic since this website doesn't have one. Anyway, in this
+                    portfolio, you’ll find a few of the projects I’ve worked on, reflecting my ongoing journey in app
+                    development. I’m always eager to learn and improve, and I look forward to the chance to collaborate
+                    on meaningful projects.</p>
+                <a href="#about"
+                    class="border border-white text-white font-medium py-2 px-4 rounded-full bg-transparent hover:bg-white hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-white transition duration-300 ease-in-out text-base sm:py-2 sm:px-4 sm:text-base md:py-3 md:px-5 md:text-lg lg:py-4 lg:px-6 lg:text-xl">
+                    Click To Advance
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="w-full h-[800px]"
+            style="background: linear-gradient(to bottom, #000000, #0b3d91, #434C5D, #424D5F);">
+        </div>
+    </div>
+
+    <div id="about" class="p-5 bg-[url('asset/sunset.jpg')] h-[1600px]">
+        <div class="flex flex-col md:flex-row items-center justify-between max-w-[1000px] mx-auto sm:mt-[200px]">
+            <div class="text-content flex-1 max-w-full md:max-w-[50%] pr-5 text-center">
+                <h1 class="text-4xl font-bold mb-4 font-[Poppins] text-white">About Me</h1>
+                <p class="text-lg text-white font-[Poppins] ">
+                    I’m an IT enthusiast with a strong interest in technology and a commitment to continuous learning.
+                    My experience spans from creating websites to exploring mobile app development. I particularly enjoy
+                    working on backend systems and solving algorithmic problems. <br> <br>
+
+                    I’m always eager to expand my knowledge and take on new challenges. My goal is to continually
+                    improve and find effective solutions in the tech world. If you’re interested in collaborating on
+                    tech projects or discussing new ideas, I’d be excited to connect and learn together..
+                </p>
+            </div>
+            <div class="image-content max-w-full md:max-w-[50%] mt-5 md:mt-0">
+                <div class="flex justify-center items-center">
+                    <img src="asset/realwajah.jpg" alt="haiyaa" width="400px" height="400px"
+                        class="mx-auto sm:mx-0 border-4 border-[#B93B2D] max-w-[80%] h-auto rounded-[809px] ">
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto p-5 sm:mt-[100px]">
+            <h2 class="text-3xl font-bold text-center mb-10 font-[Poppins] text-white">My Experience</h2>
+            <div class="relative border-l-4 border-gray-200">
+                <div class="mb-10 ml-6">
+                    <div class="absolute w-6 h-6 bg-blue-500 rounded-full -left-3.5 border-4 border-white"></div>
+                    <time class="text-sm font-semibold text-white ">2018</time>
+                    <h3 class="text-xl font-bold text-white">Enrolled in Telkom Sidooarjo Vocational High School</h3>
+                    <p class="text-white">
+                        This is my first time learning about and being exposed to the technological world. Even though
+                        my
+                        major is telecommunications access networks, I am deeply interested in programming
+                    </p>
+                </div>
+                <div class="mb-10 ml-6">
+                    <div class="absolute w-6 h-6 bg-blue-500 rounded-full -left-3.5 border-4 border-white"></div>
+                    <time class="text-sm font-semibold text-white">July - November 2023</time>
+                    <h3 class="text-xl font-bold text-white">Internship Fullstack Developer at PT Tranceformasi
+                        Indonesia
+                    </h3>
+                    <p class="text-white">
+                        Specialized in developing back-end systems. But also responsible for creating several pages
+                        of website and report templates using Tailwind CSS and pure CSS
+                    </p>
+                </div>
+                <div class="mb-10 ml-6">
+                    <div class="absolute w-6 h-6 bg-blue-500 rounded-full -left-3.5 border-4 border-white"></div>
+                    <time class="text-sm font-semibold text-white">December 2023 - January 2024</time>
+                    <h3 class="text-xl font-bold text-white">Freelance Creating Website</h3>
+                    <p class="text-white">
+                        Creating website according to client specification. Using both Laravel and Tailwind CSS
+                    </p>
+                </div>
+                <div class="ml-6">
+                    <div class="absolute w-6 h-6 bg-blue-500 rounded-full -left-3.5 border-4 border-white"></div>
+                    <time class="text-sm font-semibold text-white">August 2024 - Now</time>
+                    <h3 class="text-xl font-bold text-white">Enrolled in the D4 Informatics program at EEPIS.</h3>
+                    <p class="text-white">
+                        Wishing to enhance my skills and improve my software development abilities, I decided to join the Informatics program at EEPIS
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="bg-[url('asset/rocky.jpg')] w-full h-[2000px] sm:h-[1200px] pt-[80px]">
+        <div id="projects" class="mt-[80px] text-white text-center py-4 px-6  max-w-xs md:max-w-md lg:max-w-lg mx-auto">
+            <p class="font-[Poppins] text-[30px] md:text-xl lg:text-2xl font-semibold transform scale-x-[1.2]">PROJECTS
+            </p>
+        </div>
+
+        <div class="max-w-[1200px] mx-auto ">
+            <div class="flex flex-col md:flex-row items-center">
+
+
+
+                <main class="grid mt-[40px] w-full place-content-center">
+                    <div x-data="imageSlider1"
+                        class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4">
+                        <div
+                            class="absolute right-5 top-5 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
+                            <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
+                        </div>
+
+                        <button @click="previous()"
+                            class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+                            <i class="fas fa-chevron-left text-2xl font-bold text-gray-500"></i>
+                        </button>
+
+                        <button @click="forward()"
+                            class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+                            <i class="fas fa-chevron-right text-2xl font-bold text-gray-500"></i>
+                        </button>
+
+                        <div class="relative h-80" style="width: 30rem">
+                            <template x-for="(image, index) in images">
+                                <div x-show="currentIndex == index + 1"
+                                    x-transition:enter="transition transform duration-300"
+                                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                                    x-transition:leave="transition transform duration-300"
+                                    x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                                    class="absolute top-0">
+                                    <img :src="image" alt="image" class="rounded-sm" />
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </main>
+
+                <script>
+                    document.addEventListener("alpine:init", () => {
+                        Alpine.data("imageSlider1", () => ({
+                            currentIndex: 1,
+                            images: [
+                                "asset/8dimensi/8dimensi1.png",
+                                "asset/8dimensi/8dimensi2.png",
+                                "asset/8dimensi/8dimensi3.png",
+                                "asset/8dimensi/8dimensi4.png",
+                                "asset/8dimensi/8dimensi5.png",
+                                "asset/8dimensi/8dimensi6.png",
+                            ],
+                            previous() {
+                                if (this.currentIndex > 1) {
+                                    this.currentIndex = this.currentIndex - 1;
+                                }
+                            },
+                            forward() {
+                                if (this.currentIndex < this.images.length) {
+                                    this.currentIndex = this.currentIndex + 1;
+                                }
+                            },
+                        }));
+                    });
+                </script>
+
+
+
+                <div class="md:w-1/2 w-full md:pl-8 text-center mt-[30px] sm:mt-[20px]">
+                    <h2 class="text-3xl font-bold mb-4 text-white">8dimensikepemimpinan.id</h2>
+                    <p class="text-lg text-white">
+                        8 Dimensions is a Laravel based website designed to assess an individual’s leadership qualities.
+                        On this
+                        project, I am primarily focused on the backend system. My responsibilities include programming
+                        the website flow, creating report templates by converting HTML/CSS to PDF using DOMPDF,
+                        translating the evaluation algorithm from the Tranceformasi team into PHP for automation, and
+                        other related tasks.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-[1200px] mx-auto mt-[100px]">
+            <div class="flex flex-col md:flex-row items-center">
+
+
+
+                <main class="grid mt-[40px] w-full place-content-center">
+                    <div x-data="imageSlider2"
+                        class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4">
+                        <div
+                            class="absolute right-5 top-5 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
+                            <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
+                        </div>
+
+                        <button @click="previous()"
+                            class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+                            <i class="fas fa-chevron-left text-2xl font-bold text-gray-500"></i>
+                        </button>
+
+                        <button @click="forward()"
+                            class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+                            <i class="fas fa-chevron-right text-2xl font-bold text-gray-500"></i>
+                        </button>
+
+                        <div class="relative h-80" style="width: 30rem">
+                            <template x-for="(image, index) in images">
+                                <div x-show="currentIndex == index + 1"
+                                    x-transition:enter="transition transform duration-300"
+                                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                                    x-transition:leave="transition transform duration-300"
+                                    x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                                    class="absolute top-0">
+                                    <img :src="image" alt="image" class="rounded-sm" />
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </main>
+
+                <script>
+                    document.addEventListener("alpine:init", () => {
+                        Alpine.data("imageSlider2", () => ({
+                            currentIndex: 1,
+                            images: [
+                                "asset/teamsix/teamsix1.png",
+                                "asset/teamsix/teamsix2.png",
+                                "asset/teamsix/teamsix3.png",
+                                "asset/teamsix/teamsix4.png",
+                            ],
+                            previous() {
+                                if (this.currentIndex > 1) {
+                                    this.currentIndex = this.currentIndex - 1;
+                                }
+                            },
+                            forward() {
+                                if (this.currentIndex < this.images.length) {
+                                    this.currentIndex = this.currentIndex + 1;
+                                }
+                            },
+                        }));
+                    });
+                </script>
+
+
+
+                <div class="md:w-1/2 w-full md:pl-8 text-center mt-[30px] sm:mt-[20px]">
+                    <h2 class="text-3xl font-bold mb-4 text-white">teamsix23.8dimensikepemimpinan.id</h2>
+                    <p class="text-lg text-white">
+                        TeamSix is a Laravel-based web game that enhances cognitive skills and team collaboration. It
+                        tells the story of a bomb disposal team facing a terrorist group. I have primarily focused on
+                        developing the frontend using Tailwind CSS. However, I also manage nearly all aspects of the
+                        backend, such as implementing temporary user storage with Laravel's session feature,
+                        anti-cheating mechanisms, admin CRUD operations, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer class="bg-white py-6">
+    <div id="contact" class="max-w-4xl mx-auto px-4">
+        <div class="flex justify-between items-center">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800">Get in Touch</h3>
+                <p class="text-sm text-gray-600">I'm available on these platforms:</p>
+            </div>
+
+            <div class="flex space-x-6">
+                <a href="https://wa.me/6283849012200" target="_blank" class="text-gray-600 hover:text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.52 3.48C18.52 1.48 15.98 0 13.24 0 7.42 0 2.88 4.54 2.88 10.36c0 1.73.44 3.44 1.27 4.96l-1.35 4.91 5.05-1.31c1.48.81 3.15 1.24 4.84 1.24 5.84 0 10.4-4.55 10.4-10.36 0-2.74-1.48-5.28-3.47-7.28zM13.24 19.2c-1.46 0-2.9-.38-4.18-1.11l-.3-.18-3.14.82.83-3.03-.2-.31c-.76-1.27-1.16-2.72-1.16-4.2 0-4.61 3.75-8.36 8.36-8.36 2.24 0 4.35.88 5.94 2.46 1.6 1.6 2.46 3.71 2.46 5.94.02 4.6-3.74 8.35-8.35 8.35zm4.48-5.56c-.07-.1-.29-.18-.61-.32-.32-.13-1.9-.94-2.19-1.05-.3-.11-.52-.16-.74.11-.22.26-.86 1.05-1.06 1.27-.2.22-.4.25-.72.09-.32-.16-1.36-.5-2.6-1.58-.96-.86-1.6-1.92-1.78-2.25-.18-.32-.02-.49.13-.65.14-.14.32-.37.48-.55.16-.18.22-.26.34-.44.11-.18.05-.32-.03-.45-.08-.13-.74-1.8-1.02-2.49-.27-.66-.54-.57-.74-.57-.2 0-.42-.01-.65-.01-.23 0-.45.09-.59.29-.15.21-.6.62-.6 1.51 0 .89.62 1.75.7 1.87.08.11 1.21 1.92 2.94 2.7.37.16.66.25.89.34.37.15.71.13.97.08.29-.04.9-.37 1.03-.72.13-.36.13-.66.09-.72-.05-.06-.14-.09-.23-.14z" />
+                    </svg>
+                </a>
+                <a href="mailto:reyhanputra@it.student.pens.ac.id" class="text-gray-600 hover:text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M21.8 4H2.2C.98 4 0 4.98 0 6.2v11.6C0 19.02.98 20 2.2 20h19.6c1.22 0 2.2-.98 2.2-2.2V6.2c0-1.22-.98-2.2-2.2-2.2zM20 6l-8 5.25L4 6h16zm1 11H3V8l9 5.99L21 8v9z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/reyhan-putra-ariutama/" target="_blank"
+                    class="text-gray-600 hover:text-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452H17.5V15.9c0-1.084-.02-2.48-1.511-2.48-1.512 0-1.744 1.181-1.744 2.4v4.63h-2.947V9.948h2.831v1.452h.041c.395-.749 1.36-1.541 2.794-1.541 2.988 0 3.54 1.965 3.54 4.521v6.072zM5.337 8.497c-.949 0-1.716-.77-1.716-1.718 0-.949.768-1.719 1.716-1.719.948 0 1.717.77 1.717 1.719 0 .948-.769 1.718-1.717 1.718zm1.474 11.955H3.863V9.948h2.948v10.504zM22.225 0H1.771C.792 0 0 .779 0 1.739v20.523C0 23.22.792 24 1.771 24h20.452C23.208 24 24 23.22 24 22.262V1.739C24 .779 23.208 0 22.225 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
